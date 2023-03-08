@@ -25,7 +25,7 @@ Event Ticketing: QR codes can be used to facilitate event ticketing. Instead of 
 
 Contactless Check-In: QR codes can be used for contactless check-in at hotels, airports, and other locations. Customers can scan a QR code with their smartphone to check in, reducing the need for face-to-face interactions.
 <h2>How to scan QR code</h2>
-<a href="https://wwww.qrscanner.org">Scanning a QR code</a> is easy and can be done with a smartphone or a tablet. Here are the steps to scan a QR code:
+<a href="https://www.qrscanner.org">Scanning a QR code</a> is easy and can be done with a smartphone or a tablet. Here are the steps to scan a QR code:
 
 Open the Camera app on your smartphone or tablet.
 
