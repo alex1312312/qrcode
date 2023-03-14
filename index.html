@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scan QR Code</title>
+    <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
+  </head>
+  <body>
+    <video id="preview"></video>
+  </body>
+  <script>
+    Quagga.init({
+      inputStream : {
+        name : "Live",
+        type : "LiveStream",
+        target: document.querySelector('#preview')
+      },
+      decoder : {
+        readers : ["ean_reader", "upc_reader", "code_128_reader"]
+      }
+    }, function(err) {
+        if (err) {
+            console.log(err);
+            return
+        }
+        console.log("Initialization finished. Ready to start");
+        Quagga.start();
+    });
+
+    Quagga.onDetected(function(result) {
+        console.log(result);
+    });
+  </script>
+</html>
+In this example, we're using the Quagga library to initialize a live video stream from the camera, and then scanning for QR codes using the specified readers. The onDetected function is used to handle the detected result of the QR code scan. You can modify this function to perform any desired action with the scanned data.
+
+
+
+
+
